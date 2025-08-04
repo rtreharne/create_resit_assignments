@@ -14,7 +14,7 @@ def create_course_list(fname):
     unique_values = df["Subject-Course"].unique().tolist()
 
     # Save to JSON
-    with open("subject_course_list.json", "w") as f:
+    with open("subject_course_list_all.json", "w") as f:
         json.dump(unique_values, f, indent=2)
 
 if __name__ == "__main__":
